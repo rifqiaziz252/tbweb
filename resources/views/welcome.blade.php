@@ -10,13 +10,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>AdminLTE 2 | Starter</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="{{asset('AdminLTE2.4.3/stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
+  <link rel="{{asset('AdminLTE-2.4.3/stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
   <!-- Font Awesome -->
-  <link rel="{{asset('AdminLTE2.4.3/stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css')}}">
+  <link rel="{{asset('AdminLTE-2.4.3/stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css')}}">
   <!-- Ionicons -->
-  <link rel="{{asset('AdminLTE2.4.3/stylesheet" href="bower_components/Ionicons/css/ionicons.min.css')}}">
+  <link rel="{{asset('AdminLTE-2.4.3/stylesheet" href="bower_components/Ionicons/css/ionicons.min.css')}}">
   <!-- Theme style -->
-  <link rel="{{asset('AdminLTE2.4.3/stylesheet" href="dist/css/AdminLTE.min.css')}}">
+  <link rel="{{asset('AdminLTE-2.4.3/stylesheet" href="dist/css/AdminLTE.min.css')}}">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
@@ -396,11 +396,11 @@ desired effect
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 3 -->
-<script src="{{asset('AdminLTE2.4.3/bower_components/jquery/dist/jquery.min.js')}}"></script>
+<script src="{{asset('AdminLTE-2.4.3/bower_components/jquery/dist/jquery.min.js')}}"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="{{asset('AdminLTE2.4.3/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('AdminLTE-2.4.3/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{asset('AdminLTE2.4.3/dist/js/adminlte.min.js')}}"></script>
+<script src="{{asset('AdminLTE-2.4.3/dist/js/adminlte.min.js')}}"></script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
