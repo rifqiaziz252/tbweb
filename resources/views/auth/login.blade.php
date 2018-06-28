@@ -1,69 +1,83 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PERPUSKU - LOGIN</title>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <link rel="stylesheet" href="{{asset('vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}">
+  <link rel="stylesheet" href="{{asset('vendors/iconfonts/puse-icons-feather/feather.css')}}">
+  <link rel="stylesheet" href="{{asset('vendors/css/vendor.bundle.base.css')}}">
+  <link rel="stylesheet" href="{{asset('vendors/css/vendor.bundle.addons.css')}}">
+  <link rel="stylesheet" href="{{asset('css/style.css')}}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{{asset('favicon.ico')}}" />
+</head>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+<body>
+<form method="POST" action="{{ route('login') }}">
+{{ csrf_field() }}
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper auth-page">
+      <div class="content-wrapper d-flex align-items-center auth theme-one">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+        <div class="row w-100">
+        <div class="col-md-12" style="margin-bottom: 20px;">
+        <h2 style="text-align: center;">PERPUSKU - GILACODING</h2>
+        </div>
+        <div class="col-lg-4 mx-auto">
+            <div class="auto-form-wrapper">
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}"">
+                  <label class="label">Username</label>
+                  <div class="input-group">
+                    <input id="email" type="text" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="mdi mdi-check-circle-outline"></i>
+                      </span>
+                    </div>
+                  </div>
+                    @if ($errors->has('email'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                  <label class="label">Password</label>
+                  <div class="input-group">
+                    <input id="password" type="password" class="form-control" name="password" required>
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="mdi mdi-check-circle-outline"></i>
+                      </span>
+                    </div>
+                    @if ($errors->has('password'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
+                    @endif
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary submit-btn btn-block" type="submit">Login</button>
                 </div>
             </div>
+            <p class="footer-text text-center" style="margin-top: 20px;color: #308ee0">Copyright © {{date('Y')}} Gilacoding.com - All rights reserved.</p>
+          </div>
         </div>
+      </div>
+      <!-- content-wrapper ends Herziwp@gmail.com -->
     </div>
-</div>
-@endsection
+    <!-- page-body-wrapper ends -->
+  </div>
+  </form>
+  <script src="{{asset('vendors/js/vendor.bundle.base.js')}}"></script>
+  <script src="{{asset('vendors/js/vendor.bundle.addons.js')}}"></script>
+</body>
+
+</html>
