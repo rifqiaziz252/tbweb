@@ -90,8 +90,8 @@ $(document).ready(function() {
                             <select class="form-control" name="prodi" required="" disabled="">
                                 <option value=""></option>
                                 <option value="TI" {{$data->prodi === "TI" ? "selected" : ""}} >Teknik Informatika</option>
-                                <option value="SI" {{$data->prodi === "SI" ? "selected" : ""}} >Sistem Informasi</option>
-                                <option value="KM" {{$data->prodi === "KM" ? "selected" : ""}} >Kesehatan Masyarakat</option>
+                                <option value="SI" {{$data->prodi === "SI" ? "selected" : ""}} >Ekonomi</option>
+                                <option value="KM" {{$data->prodi === "KM" ? "selected" : ""}} >Kesehatan</option>
                             </select>
                             </div>
                         </div>

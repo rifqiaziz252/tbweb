@@ -247,9 +247,9 @@
                           @if($data->prodi == 'TI')
                             Teknik Informatika
                           @elseif($data->prodi == 'SI')
-                            Sistem Informasi
+                            Ekonomi
                           @else
-                            Kesehatan Masyarakat
+                            Kesehatan
                           @endif
                           </td>
                           <td>

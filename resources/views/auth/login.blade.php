@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>PERPUSKU - LOGIN</title>
+  <title>PERPUSTAKAAN - LOGIN</title>
 
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="stylesheet" href="{{asset('vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}">
@@ -26,7 +26,7 @@
 
         <div class="row w-100">
         <div class="col-md-12" style="margin-bottom: 20px;">
-        <h2 style="text-align: center;">PERPUSKU - GILACODING</h2>
+        <h2 style="text-align: center;">PERPUSTAKAAN</h2>
         </div>
         <div class="col-lg-4 mx-auto">
             <div class="auto-form-wrapper">
