@@ -35,7 +35,7 @@ $(document).ready(function() {
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('npm') ? ' has-error' : '' }}">
-                            <label for="npm" class="col-md-4 control-label">NPM</label>
+                            <label for="npm" class="col-md-4 control-label">NIM</label>
                             <div class="col-md-6">
                                 <input id="npm" type="number" class="form-control" name="npm" value="{{ old('npm') }}" maxlength="8" required>
                                 @if ($errors->has('npm'))
